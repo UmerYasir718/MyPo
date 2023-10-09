@@ -5,7 +5,6 @@ import MyResume from './myComponets/MyResume';
 import Portfolio from './myComponets/Portfolio';
 import Contact from './myComponets/Contact';
 import './App.css';
-import {logo} from './logo.svg'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
