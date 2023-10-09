@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import '../App.css';
 import Navbar from './Navbar';
 export default function Intro() {
     const [text, setText] = useState('');
     const [index, setIndex] = useState(0);
-    const texts = ['A Software Engineer', 'As a Full Stack Developer'];
+    const texts = useMemo(() => ['A Software Engineer', 'As a Full Stack Developer'], []);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [currentText, setCurrentText] = useState(texts[currentIndex]);
 
@@ -40,7 +40,7 @@ export default function Intro() {
             }
 
             return () => clearInterval(interval); // Clean up the interval on unmount
-        }, [index, initialText]);
+        }, [initialText]);
     }
     SlowMotionText()
     return (

@@ -24,7 +24,7 @@ export default function Contact() {
     const SubmitData = async () => {
         console.log(name, email, message, subject)
         try {
-            const response = await fetch("http://localhost:8000/contact", {
+            fetch("http://localhost:8000/contact", {
                 method: "POST",
                 body: JSON.stringify({ name, email, subject, message }),
                 headers: {
@@ -62,7 +62,7 @@ export default function Contact() {
                     </div>
                     <div class="col-md-8">
                         <div class="mapouter featurette-image img-fluid mx-auto border" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                            <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=673&amp;height=150&amp;hl=en&amp;q=Phool Nagar, Lahore&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                            <div class="gmap_canvas"><iframe title="This is a unique title" class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=673&amp;height=150&amp;hl=en&amp;q=Phool Nagar, Lahore&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                             </iframe>
                                 <a href="https://embed-googlemap.com">embed google maps</a>
                             </div>
