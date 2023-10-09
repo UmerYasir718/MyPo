@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import '../App.css';
-import logo from '../logo.svg'
 export default function Navbar() {
   // const [textColor, setTextColor] = useState({
   //   color: "black",
