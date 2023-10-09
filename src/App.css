@@ -1,0 +1,178 @@
+body {
+  background-color: #6C757D;
+  padding-top: 100px;
+}
+
+.textColor {
+  color: white;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+/* -----------------------------------Navbar----------------------------- */
+.Navbar {
+  background-color: #282C34;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.Navbar NavLink {
+  color: white;
+}
+
+.Icon {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+.logo {
+  height: 8vmin;
+}
+
+.active {
+  color: white;
+  font-weight: bold;
+  border-bottom: 4px solid #FFCA2C;
+}
+
+/* .nav-link:focus {
+  color: white;
+  font-weight: bold;
+  border-bottom: 4px solid #FFCA2C;
+} */
+/* -----------------------------------Intro------------------------------ */
+.Picture {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+@media screen and (min-width:0px) and (max-width:420px) {
+  .ref {
+    margin-top: 450px;
+    align-items: center;
+  }
+
+  .Picture img {
+    margin-top: -900px;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  .ref {
+    margin-top: 520px;
+    align-items: center;
+  }
+
+  .Picture img {
+    margin-top: -950px;
+  }
+}
+
+/* -----------------------------------About------------------------------ */
+.AboutBox {
+  background-color: #282C34;
+  padding: 2px;
+}
+
+@media screen and (min-width:0px) and (max-width:420px) {
+  .conbtn {
+    margin-top: 450px;
+    align-items: center;
+  }
+
+  .pic img {
+    margin-top: -750px;
+    align-items: center;
+    justify-content: center;
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  .conbtn {
+    margin-top: 400px;
+    align-items: center;
+  }
+
+  .pic img {
+    margin-top: -600px;
+    align-items: center;
+  }
+}
+
+/* -----------------------------------MyResume------------------------------ */
+.Skills {
+  justify-content: center;
+}
+
+.Mainheading {
+  color: #FFCA2C;
+  font-weight: bold;
+}
+
+.heading {
+  color: #FFCA2C;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.progessBar {
+  background-color: greenyellow;
+}
+
+
+/* -------------------------------Contact------------------------ */
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 150px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 150px;
+}
+
+.gmap_iframe {
+  height: 150px !important;
+}
