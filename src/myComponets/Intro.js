@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import '../App.css';
 import Navbar from './Navbar';
 export default function Intro() {
-    const [text, setText] = useState('');
-    const [index, setIndex] = useState(0);
+    // const [text, setText] = useState('');
+    // const [index, setIndex] = useState(0);
     const texts = useMemo(() => ['A Software Engineer', 'As a Full Stack Developer'], []);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [currentText, setCurrentText] = useState(texts[currentIndex]);
@@ -20,29 +20,29 @@ export default function Intro() {
         // Clean up the interval when the component unmounts
         return () => clearInterval(interval);
     }, [currentIndex, texts]);
-    function SlowMotionText() {
-        const initialText = `I am a Student of BS Software Engineering currently
-    working as a Full Stack Developer. Insha'Allah in the future I will move
-    toward Data Science.`;
-        useEffect(() => {
-            const printText = () => {
-                if (index < initialText.length) {
-                    setText((prevText) => prevText + initialText.charAt(index));
-                    setIndex((prevIndex) => prevIndex + 1);
-                }
-            };
+    // function SlowMotionText() {
+    //     const initialText = `I am a Student of BS Software Engineering currently
+    // working as a Full Stack Developer. Insha'Allah in the future I will move
+    // toward Data Science.`;
+    //     useEffect(() => {
+    //         const printText = () => {
+    //             if (index < initialText.length) {
+    //                 setText((prevText) => prevText + initialText.charAt(index));
+    //                 setIndex((prevIndex) => prevIndex + 1);
+    //             }
+    //         };
 
-            const interval = setInterval(printText, 20); // Adjust the delay between characters here (e.g., 100ms)
+    //         const interval = setInterval(printText, 20); // Adjust the delay between characters here (e.g., 100ms)
 
-            // Clear the interval when the text is fully printed
-            if (index === initialText.length) {
-                clearInterval(interval);
-            }
+    //         // Clear the interval when the text is fully printed
+    //         if (index === initialText.length) {
+    //             clearInterval(interval);
+    //         }
 
-            return () => clearInterval(interval); // Clean up the interval on unmount
-        }, [initialText]);
-    }
-    SlowMotionText()
+    //         return () => clearInterval(interval); // Clean up the interval on unmount
+    //     }, [initialText]);
+    // }
+    // SlowMotionText()
     return (
         <div>
             <Navbar />
@@ -56,7 +56,9 @@ export default function Intro() {
                                     {currentText}
                                 </span>
                             </h2>
-                            <p className="lead textColor">{text}
+                            <p className="lead textColor">I am a Student of BS Software Engineering currently
+    working as a Full Stack Developer. Insha'Allah in the future I will move
+    toward Data Science.
                             </p>
                             <div className="ref ">
                                 <button type="button" className="btn btn-outline-warning bg-light">
