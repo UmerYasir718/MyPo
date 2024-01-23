@@ -5,6 +5,7 @@ export default function Portfolio() {
   return (
     <div>
       <Navbar />
+      {/* --------------------------------------------First One----------------------------- */}
       <div className="container">
         <div className="row my-3">
           <div className="col-md-5">
@@ -13,7 +14,83 @@ export default function Portfolio() {
                 className="bd-placeholder-img card-img-top"
                 width="100%"
                 height="225"
-                src="Gifs/ToDo_List.gif"
+                src="https://res.cloudinary.com/dvccsosdc/image/upload/v1706049774/AIBlog_noqybe.gif"
+                alt=""
+              />
+              <div className="card-body bg-dark text-light">
+                <p className="card-text">
+                  <span className="text-warning font-weight-bold">
+                    AI Blog App ON MERN
+                  </span>{" "}
+                  Create blog based on topic and keywords ,secure data of
+                  users,mongoose to store data.In addition the
+                  Bootstrap,openai,auth0 and stripe are include in it.
+                </p>
+                <div className="d-flex justify-content-between align-items-center">
+                  <div className="btn-group">
+                    <Link
+                      to="https://umeryasirblog.netlify.app/"
+                      target="_blank"
+                    >
+                      <button
+                        type="button"
+                        className="btn btn-md btn-outline-warning"
+                      >
+                        View
+                      </button>
+                    </Link>
+                  </div>
+                  <small className="text-light">1/2 Month ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-2">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <div className="col-md-5 ">
+            <div className="card shadow-sm">
+              <img
+                className="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                src="https://res.cloudinary.com/dvccsosdc/image/upload/v1706049776/Store_lulzhg.gif"
+                alt=""
+              />
+              <div className="card-body bg-dark text-light">
+                <p className="card-text">
+                  <span className="text-warning font-weight-bold">
+                    Store based on React Js
+                  </span>{" "}
+                  include functionality like Add-to-cart Use React Hooks, Api
+                  fetch and Customize design for better user interaction.
+                </p>
+                <div className="d-flex justify-content-between align-items-center">
+                  <div className="btn-group">
+                    <Link to="https://umerstore.netlify.app/" target="_blank">
+                      <button
+                        type="button"
+                        className="btn btn-md btn-outline-warning"
+                      >
+                        View
+                      </button>
+                    </Link>
+                  </div>
+                  <small className="text-light">2/5 Month ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* --------------------------------------------Second One----------------------------- */}
+      <div className="container my-3">
+        <div className="row my-3">
+          <div className="col-md-5">
+            <div className="card shadow-sm">
+              <img
+                className="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                src="https://res.cloudinary.com/dvccsosdc/image/upload/v1706048093/ToDo_List_q9p4dv.gif"
                 alt=""
               />
               <div className="card-body bg-dark text-light">
@@ -51,7 +128,7 @@ export default function Portfolio() {
                 className="bd-placeholder-img card-img-top"
                 width="100%"
                 height="225"
-                src="Gifs/Final_project.gif"
+                src="https://res.cloudinary.com/dvccsosdc/image/upload/v1706048121/Final_project_shhduy.gif"
                 alt=""
               />
               <div className="card-body bg-dark text-light">
@@ -84,7 +161,7 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-      {/* --------------------------------------------Second One----------------------------- */}
+      {/* --------------------------------------------Third One----------------------------- */}
       <div className="container my-3">
         <div className="row">
           <div className="col-md-5">
@@ -93,7 +170,7 @@ export default function Portfolio() {
                 className="bd-placeholder-img card-img-top"
                 width="100%"
                 height="225"
-                src="Gifs/conveter.gif"
+                src="https://res.cloudinary.com/dvccsosdc/image/upload/v1706048071/conveter_skzidd.gif"
                 alt=""
               />
               <div className="card-body bg-dark text-light ">
@@ -130,7 +207,7 @@ export default function Portfolio() {
                 className="bd-placeholder-img card-img-top"
                 width="100%"
                 height="225"
-                src="Gifs/Portfolio_Interfaces.gif"
+                src="https://res.cloudinary.com/dvccsosdc/image/upload/v1706048093/Portfolio_Interfaces_skjfwr.gif"
                 alt=""
               />
               <div className="card-body bg-dark text-light">
@@ -157,7 +234,7 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-      {/* --------------------------------------------Third One----------------------------- */}
+      {/* --------------------------------------------Fourth One----------------------------- */}
       <div className="container my-3">
         <div className="row">
           <div className="col-md-5">
@@ -166,7 +243,7 @@ export default function Portfolio() {
                 className="bd-placeholder-img card-img-top"
                 width="100%"
                 height="225"
-                src="Gifs/Html.gif"
+                src="https://res.cloudinary.com/dvccsosdc/image/upload/v1706048107/Html_zwd1hl.gif"
                 alt=""
               />
               <div className="card-body bg-dark text-light">
@@ -198,7 +275,7 @@ export default function Portfolio() {
                 className="bd-placeholder-img card-img-top"
                 width="100%"
                 height="225"
-                src="Gifs/gallery.gif"
+                src="https://res.cloudinary.com/dvccsosdc/image/upload/v1706048114/gallery_n87vvo.gif"
                 alt=""
               />
               <div className="card-body bg-dark text-light">

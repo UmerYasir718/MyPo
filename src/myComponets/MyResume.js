@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import Navbar from "./Navbar";
 import ProgressBar from "@ramonak/react-progress-bar";
+import React, { useState } from "react";
 import "../App.css";
-import Umt from "../Pics/umt.jpg";
-import Aspire from "../Pics/aspire.jpg";
-import Deen from "../Pics/deen.jpg";
+import Navbar from "./Navbar";
 // import 'react-circular-progressbar/dist/styles.css';
 export default function MyResume() {
   const htmlPercentage = 95;
@@ -88,7 +85,7 @@ export default function MyResume() {
                   class="bd-placeholder-img bd-placeholder-img-sm featurette-image img-fluid mx-auto rounded"
                   width="150"
                   height="150"
-                  src={Umt}
+                  src="https://res.cloudinary.com/dvccsosdc/image/upload/v1706047900/umt_zj4usm.jpg"
                   alt=""
                 />
               </div>
@@ -115,7 +112,7 @@ export default function MyResume() {
                   className="bd-placeholder-img bd-placeholder-img-sm featurette-image img-fluid mx-auto rounded"
                   width="150"
                   height="150"
-                  src={Aspire}
+                  src="https://res.cloudinary.com/dvccsosdc/image/upload/v1706047883/aspire_h5tv3h.jpg"
                   alt=""
                 />
               </div>
@@ -140,7 +137,7 @@ export default function MyResume() {
                   className="bd-placeholder-img bd-placeholder-img-sm featurette-image img-fluid mx-auto rounded"
                   width="150"
                   height="150"
-                  src={Deen}
+                  src="https://res.cloudinary.com/dvccsosdc/image/upload/v1706047884/deen_jomdlk.jpg"
                   alt=""
                 />
               </div>

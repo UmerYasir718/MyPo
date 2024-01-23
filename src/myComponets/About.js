@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
-import Pictrue from "../Pics/Aboutpg.png";
 import Navbar from "./Navbar";
 export default function About() {
   return (
@@ -126,7 +125,7 @@ export default function About() {
                 className="bd-placeholder-img bd-placeholder-img-sm featurette-image img-fluid mx-auto rounded"
                 width="400"
                 height="200"
-                src={Pictrue}
+                src="https://res.cloudinary.com/dvccsosdc/image/upload/v1706047903/Aboutpg_rzkieg.png"
                 alt=""
               />
             </div>

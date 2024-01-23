@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import Navbar from "./Navbar";
-import Picture from "../Pics/best.png";
 export default function Intro() {
   // const [text, setText] = useState('');
   // const [index, setIndex] = useState(0);
@@ -151,7 +150,7 @@ export default function Intro() {
                 className="bd-placeholder-img bd-placeholder-img-sm featurette-image img-fluid mx-auto rounded Picture"
                 width="500"
                 height="500"
-                src={Picture}
+                src="https://res.cloudinary.com/dvccsosdc/image/upload/v1706047800/best_abc7ya.png"
                 alt=""
               />
             </div>
